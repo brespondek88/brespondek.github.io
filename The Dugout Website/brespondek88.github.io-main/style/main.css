@@ -1,0 +1,328 @@
+/* @author: braiden respondek date developed: 2-2-26, tested: 2-22-26 */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Mobile Media Queries */
+@media only screen and (max-width: 767px) {
+    #mobile_menu { display: block; }
+    #nav_menu { display: none; }
+    header h2 { font-size: 1.375em; }
+    p { font-size: 0.875em; }
+    article h1, main h2, aside h2 { font-size: 1em; }
+}
+
+/* General Layout */
+body {
+    font-size: 1em;      
+    width: 90%;
+    max-width: 1024px;
+    background-color: #ffffff; /* White background */
+    color: #000000;            /* Black text */
+    margin: 10px auto;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    padding: 10px 0;
+    clear: both;
+    overflow: auto; /* Contains the floated logo and nav */
+}
+
+main {
+    width: 48%;
+    padding: 10px;
+    float: left;
+    background-color: #ffffff;
+}
+
+aside {
+    width: 48%; 
+    padding: 10px;
+    float: right;
+    background-color: #ffffff;
+}
+
+/* Typography */
+h1 { font-size: 1.5em; padding: 10px 0;}
+h2 { font-size: 1.5em; padding: 10px 0; }
+p { font-size: 1.1em; line-height: 1.5; padding: 5px 0; }
+
+/* Navigation Menu */
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 40px 0; /* Aligns text vertically with the logo */
+    font-size: 1.1em; 
+    float: left;
+}
+
+#nav_menu ul li {
+    display: inline;
+    padding: 0 15px;
+}
+
+#nav_menu ul li a {
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+
+#nav_menu ul li a.current {
+    color: #B5D3E7; /* Highlight color for current page */
+}
+
+/* Rollover Logo Styles */
+.rollover {
+    position: relative;
+    width: 120px;
+    height: 120px;       
+    float: left;         
+    margin: 0 20px 0 0; 
+    border: 3px solid #B5D3E7;
+    border-radius: 15px;
+    overflow: hidden;   
+}
+
+.rollover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.rollover .img2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.rollover:hover .img2 {
+    opacity: 1;
+}
+
+/* Specific Image Controls for Content */
+.main-img {
+    display: block;
+    width: 90%;       /* Control size of shop image here */
+    height: auto;
+    margin: 15px auto;
+    border-radius: 8px;
+    float: left;
+}
+
+.owner-img {
+    display: block;
+    width: 70%;       /* Control size of owner image here */
+    height: auto;
+    margin: 15px 0;
+    border-radius: 8px;
+    
+}
+
+/* Control the size of the league page image */
+.league-img {
+    display: block;
+    width: 50%;          /* Adjust this percentage to make it larger or smaller */
+    max-width: 500px;    /* Prevents it from getting too huge on desktop */
+    height: auto;        /* Keeps the aspect ratio perfect */
+    margin: 20px auto;   /* Centers the image and adds space around it */
+    border-radius: 12px; /* Optional: rounds the corners to match your style */
+    border: 2px solid #B5D3E7; /* Optional: adds a matching border */
+}
+footer {
+    font-size: .85em;
+    width: 100%; 
+    padding: 20px 0;
+    clear: both;
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+}
+
+/* Container Spacing */
+main {
+    padding: 20px;
+}
+
+fieldset {
+    border: 2px solid #B5D3E7; 
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Removes the double-border look */
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+/* Header Styling */
+th {
+    background-color: #B5D3E7;
+    color: #000;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 3px solid #79a6c7;
+}
+
+/* Row & Cell Styling */
+td {
+    padding: 12px;
+    border-bottom: 1px dotted #ccc;
+    text-align: left;
+}
+
+/* Zebra Striping - makes it much easier to read */
+tbody tr:nth-child(even) {
+    background-color: #f2f8fc;
+}
+
+/* Hover effect so users know which row they are looking at */
+tbody tr:hover {
+    background-color: #e8f4fd;
+}
+
+/* Footer Styling */
+tfoot td {
+    font-style: italic;
+    font-size: 0.9rem;
+    padding-top: 15px;
+    color: #666;
+    text-align: center;
+}
+
+/* Bold the first column (The Divisions) */
+.left {
+    font-weight: bold;
+    color: #2c3e50;
+    width: 20%;
+}
+
+#rainbow-text {
+    font-weight: bold;
+    font-size: 1.5rem; /* Adjust size as needed */
+    text-align: left;
+    
+    /* Create the rainbow gradient */
+    background: linear-gradient(
+        to right, 
+        #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff, #ff0000
+    );
+    
+    /* Clip the background to the text */
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+    /* Make the actual text transparent so the background shows through */
+    color: transparent;
+    
+    /* Set the background size wide so it can slide */
+    background-size: 400% 100%;
+    
+    /* Apply the animation */
+    animation: rainbow-flow 5s linear infinite;
+}
+
+/* The animation logic */
+@keyframes rainbow-flow {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+/* Targets only the figures in the main area to create the grid */
+main figure.product-square {
+    float: left;
+    width: 44%;          /* Fits two across comfortably */
+    margin: 3%;          /* Provides spacing */
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* The rollover container inside the figure */
+.rollover-container {
+    position: relative;
+    width: 100%;
+    height: 200px;       /* Fixed height keeps the grid aligned */
+    margin-bottom: 10px;
+}
+
+.rollover-container img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 100%;
+    width: auto;
+}
+
+/* Text and button styling */
+figcaption h3 { font-size: 1.1em; margin: 5px 0; }
+.price { font-weight: bold; color: #b12704; }
+main button { cursor: pointer; padding: 5px 10px; }
+
+/* Standard clearfix to keep the footer in place */
+main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* 1. Hide the second image by default */
+.rollover-container .img2 {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 2;
+}
+
+/* 2. Keep the first image visible */
+.rollover-container .img1 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1;
+}
+
+/* 3. The Magic: When hovering over the figure, swap them */
+figure.product-square:hover .img1 {
+    opacity: 0;
+}
+
+figure.product-square:hover .img2 {
+    opacity: 1;
+}
+
+/* 4. Ensure the container has a relative position for the absolute images */
+.rollover-container {
+    position: relative;
+    height: 200px; /* Adjust this to fit your bat images */
+    width: 100%;
+    overflow: hidden;
+}
+
+.rollover-container img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 100%;
+}

@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<!-- @author Braiden Respondek, The Dugout - Leagues Page
+Southern Illinois University  Developed: 5-00-2026  Tested: 5-08-26 
+-->
+<html lang="en-US">
+<head>
+    <link rel="icon" type="image/png" href="images/THE DUGOUT.png">
+    <meta charset="utf-8">
+    <title>Leagues - The Dugout</title> 
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+    <script src="js/jquery.slicknav.min.js"></script> 
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+        }); 
+    </script>
+    <audio controls autoplay loop hidden>
+        <source src="audio/Vibin-chosic.com_.mp3" type="audio/mpeg">
+    </audio>
+    <meta name="description" content="Join local baseball and softball leagues at The Dugout."> 
+    <meta name="keywords" content="Leagues, Softball, Baseball, Carbondale, The Dugout">
+</head>
+
+<body>
+    <header>
+        <figure class="rollover">
+            <img class="img1" src="images/THE DUGOUT.png" alt="The Dugout Logo"/>
+            <img class="img2" src="images/THE DUGOUT.png" alt="The Dugout Logo Hover"/>
+        </figure>
+        <p id="rainbow-text">"For the Love of Sports!"</p>
+
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">    
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="bats.htm">Bats</a></li>
+                <li><a href="leagues.htm" class="current">Leagues</a></li>
+                <li><a href="gloves.htm">Gloves</a></li>
+                <li><a href="contact.htm">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="width: 100%; float: none; clear: both;">
+        <fieldset>
+            <table>
+                <caption>2026 League Teams</caption>
+                <thead>
+                    <tr>
+                        <th class="left">Division</th>
+                        <th>Slowpitch Softball</th>
+                        <th>Fastpitch Softball</th>
+                        <th>Youth Baseball</th>
+                        <th>Senior League</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="left">Competitive</td>
+                        <td>The Bat Attitudes</td>
+                        <td>Velocity Elite</td>
+                        <td>Carbondale Cubs</td>
+                        <td>The Silver Sluggers</td>
+                    </tr>
+                    <tr>
+                        <td class="left">Rec League</td>
+                        <td>Softballies</td>
+                        <td>Diamond Divas</td>
+                        <td>Little Giants</td>
+                        <td>Vintage Volts</td>
+                    </tr>
+                    <tr>
+                        <td class="left">Weekend Warriors</td>
+                        <td>Pitch Please</td>
+                        <td>Fast & Furious</td>
+                        <td>Sandlot Kings</td>
+                        <td>Classic Curveballs</td>
+                    </tr>
+                    <tr>
+                        <td class="left">Traveling</td>
+                        <td>Road Runners</td>
+                        <td>Storm Chasers</td>
+                        <td>Saluki Sluggers</td>
+                        <td>Golden Gloves</td>
+                    </tr>
+                    <tr>
+                        <td class="left">Corporate</td>
+                        <td>The Dugout Crew</td>
+                        <td>Office All-Stars</td>
+                        <td>N/A</td>
+                        <td>Retired Rangers</td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </main>
+    <img class="league-img" src="images/seniorsoftball.png" alt="Senior Softball">
+    <footer>
+        <p>Copyright: TheDugoutCompany</p>
+    </footer>
+</body> 
+</html>
+

@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<!-- @author Braiden Respondek, The Dugout Index Page, SIUC
+Developed 5-00-25, tested 5-08-26 -->
+<html lang="en-US">
+    <head>
+        <link rel="icon" type="image/png" href="images/THE DUGOUT.png">
+        <meta charset="utf-8">
+        <title>Personal Portfolio</title> 
+        <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="js/jquery.slicknav.min.js"></script> 
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+            }); 
+        </script>
+        <audio controls autoplay loop hidden>
+            <source src="audio/Vibin-chosic.com_.mp3" type="audio/mpeg">
+        </audio>
+        <meta name="description" content="The Dugout - Sports Retailer"> 
+        <meta name="keywords" content="Portfolio, Resume, Braiden Respondek, The Dugout">
+    </head>
+
+    <body>
+        <header>
+            <figure class="rollover">
+                <img class="img1" src="images/THE DUGOUT.png" alt="The Dugout Logo"/>
+                <img class="img2" src="images/THE DUGOUT.png" alt="The Dugout Logo Hover"/>
+            </figure>
+            <p id="rainbow-text">"For the Love of Sports!"</p>
+
+            <nav id="mobile_menu"></nav>
+            <nav id="nav_menu">    
+                <ul>
+                    <li><a href="index.htm" class="current">Home</a></li>
+                    <li><a href="bats.htm">Bats</a></li>
+                    <li><a href="leagues.htm">Leagues</a></li>
+                    <li><a href="gloves.htm">Gloves</a></li>
+                    <li><a href="contact.htm">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Welcome to The Dugout!</h2>
+            <p>We are a sports equipment retailer based in Carbondale, IL. Our goal is to provide the community with top of the line gear, recreational leagues, and overall the love of baseball and softball. Please use the navigation above to access our selling, donation, and league pages!</p>
+            <img class="main-img" src="images/store-front.png" alt="Shop Display"/>
+        </main>
+
+        <aside>
+            <h2>Meet The Owner</h2>
+            <p><strong>Braiden Respondek</strong>, 19 years old, currently majoring in Cybersecurity at SIU.</p>
+            <p><strong>Hometown:</strong> Gallatin County, IL<br>
+               <strong>Favorite Activities:</strong> Softball, Running, and Writing<br>
+               <strong>Quote:</strong> "Sports has the power to build communities and change lives!"</p>
+            <img class="owner-img" src="images/me.png" alt="Braiden Respondek"/>
+        </aside>
+
+        <footer>
+            <p>Copyright: TheDugoutCompany</p>
+        </footer>
+    </body> 
+</html>

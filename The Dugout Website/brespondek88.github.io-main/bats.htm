@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- @author Braiden Respondek, The Dugout Bat Page, SIUC
+Developed 5-00-25, tested 5-08-26 -->
+<html lang="en-US">
+    <head>
+        <link rel="icon" type="image/png" href="images/THE DUGOUT.png">
+        <meta charset="utf-8">
+        <title>Personal Portfolio</title> 
+        <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="js/jquery.slicknav.min.js"></script> 
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+            }); 
+        </script>
+        <audio controls autoplay loop hidden>
+            <source src="audio/Vibin-chosic.com_.mp3" type="audio/mpeg">
+        </audio>
+        <meta name="description" content="The Dugout - Sports Retailer"> 
+        <meta name="keywords" content="Shop, Bats, Braiden Respondek, The Dugout">
+    </head>
+
+    <body>
+        <header>
+            <figure class="rollover">
+                <img class="img1" src="images/THE DUGOUT.png" alt="The Dugout Logo"/>
+                <img class="img2" src="images/THE DUGOUT.png" alt="The Dugout Logo Hover"/>
+            </figure>
+            <p id="rainbow-text">"For the Love of Sports!"</p>
+
+            <nav id="mobile_menu"></nav>
+            <nav id="nav_menu">    
+                <ul>
+                    <li><a href="index.htm">Home</a></li>
+                    <li><a href="bats.htm" class="current">Bats</a></li>
+                    <li><a href="leagues.htm">Leagues</a></li>
+                    <li><a href="gloves.htm">Gloves</a></li>
+                    <li><a href="contact.htm">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+    <h1>Shop Our Featured Bats</h1>
+
+    <!-- Product 1 -->
+    <figure class="product-square">
+        <div class="rollover-container">
+            <img class="img1" src="images/ghostadvanced.png" alt="Bat 1">
+            <img class="img2" src="images/bat-hover.png" alt="Bat 1 View">
+        </div>
+        <figcaption>
+            <h3>Ghost Advanced</h3>
+            <p class="price">$449.99</p>
+            <button>Add to Cart</button>
+        </figcaption>
+    </figure>
+
+    <!-- Product 2 -->
+    <figure class="product-square">
+        <div class="rollover-container">
+            <img class="img1" src="images/maruccicatx.png" alt="Bat 2">
+            <img class="img2" src="images/bat-hover.png" alt="Bat 2 View">
+        </div>
+        <figcaption>
+            <h3>Marucci CatX</h3>
+            <p class="price">$399.99</p>
+            <button>Add to Cart</button>
+        </figcaption>
+    </figure>
+
+    <!-- Product 3 -->
+    <figure class="product-square">
+        <div class="rollover-container">
+            <img class="img1" src="images/demarinicf.png" alt="Bat 3">
+            <img class="img2" src="images/bat-hover.png" alt="Bat 3 View">
+        </div>
+        <figcaption>
+            <h3>DeMarini CF</h3>
+            <p class="price">$349.99</p>
+            <button>Add to Cart</button>
+        </figcaption>
+    </figure>
+
+    <!-- Product 4 -->
+    <figure class="product-square">
+        <div class="rollover-container">
+            <img class="img1" src="images/louisvillemeta.png" alt="Bat 4">
+            <img class="img2" src="images/bat-hover.png" alt="Bat 4 View">
+        </div>
+        <figcaption>
+            <h3>Louisville Meta</h3>
+            <p class="price">$499.99</p>
+            <button>Add to Cart</button>
+        </figcaption>
+    </figure>
+</main>
+     
+
+        <aside>
+        
+        </aside>
+
+        <footer>
+            <p>Copyright: TheDugoutCompany</p>
+        </footer>
+    </body> 
+</html>
+
